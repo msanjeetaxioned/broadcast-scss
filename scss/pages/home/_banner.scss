@@ -1,0 +1,36 @@
+.banner { position: relative; }
+
+.banner-content {
+    position: absolute;
+    z-index: 2;
+    top: 47%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    > h2 {
+        margin-bottom: 45px;
+        color: returnMap($colors, color4);
+        font-size: 64px;
+        font-weight: bold;
+    }
+    > p {
+        margin-bottom: 45px;
+        color: returnMap($colors, color2);
+        font-size: 26px;
+        line-height: 40px;
+    }
+    a {
+        padding: 22px 35px;
+        border: 1px solid returnMap($colors, color2);
+        border-radius: 2px;
+        display: inline-block;
+        color: returnMap($colors, color4);
+        font-size: 20px;
+        font-weight: bold;
+        transition: background 1s ease-in-out, color 1s ease-in-out;
+        &:hover {
+            background: returnMap($colors, color4);
+            color: returnMap($colors, color11);
+        }
+    }
+}
