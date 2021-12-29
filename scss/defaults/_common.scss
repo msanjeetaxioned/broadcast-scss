@@ -16,11 +16,69 @@ figure {
 }
 
 .wrapper {
+    padding-top: 115px;
+    padding-bottom: 105px;
     max-width: 1733px;
     width: 90.26%;
     margin: 0 auto;
     @include mediaQuery(tablet) {
         width: 96%;
         margin: 0 auto;
+    }
+}
+
+span[title="Play Video"] {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    color: returnMap($colors, color3);
+    font-size: 0;
+    transform: translate(-50%, -50%);
+    transition: color 1s ease-in-out;
+    &::before {
+        content: "\f04b";
+        font-family: "Font Awesome 5 Free";
+        font-size: 45px;
+        font-weight: 900;
+    }
+    &:hover { 
+        color: returnMap($colors, color4);
+        cursor: pointer;
+    }
+}
+
+%heading {
+    margin-bottom: 40px;
+    color: returnMap($colors, color4);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+%paragraph {
+    margin-bottom: 70px;
+    color: returnMap($colors, color2);
+    font-size: 21px;
+    text-align: center;
+}
+
+%concert-card {
+    > figure { 
+        position: relative;
+        > img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+    > p {
+        padding: 35px 4%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: returnMap($colors, color6);
+        color: returnMap($colors, color2);
+        font-size: 21px;
+        line-height: 35px;
     }
 }

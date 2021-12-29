@@ -1,0 +1,20 @@
+.nam-eu {
+    background: returnMap($colors, color5);
+    > .wrapper {
+        > h3 {
+            @extend %heading;
+        }
+        > p {
+            @extend %paragraph;
+        }
+    }
+}
+
+.nam-eu-concerts {
+    display: flex;
+    &__item {
+        @extend %concert-card;
+        margin-right: 3.69%;
+        &:last-child { margin-right: 0; }
+    }
+}

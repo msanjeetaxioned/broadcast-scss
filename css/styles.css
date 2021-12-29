@@ -72,6 +72,8 @@ figure > img {
 }
 
 .wrapper {
+  padding-top: 115px;
+  padding-bottom: 105px;
   max-width: 1733px;
   width: 90.26%;
   margin: 0 auto;
@@ -81,6 +83,60 @@ figure > img {
     width: 96%;
     margin: 0 auto;
   }
+}
+
+span[title="Play Video"] {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  color: rgba(193, 199, 205, 0.7);
+  font-size: 0;
+  transform: translate(-50%, -50%);
+  transition: color 1s ease-in-out;
+}
+span[title="Play Video"]::before {
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-size: 45px;
+  font-weight: 900;
+}
+span[title="Play Video"]:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nam-eu > .wrapper > h3 {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nam-eu > .wrapper > p {
+  margin-bottom: 70px;
+  color: #76766f;
+  font-size: 21px;
+  text-align: center;
+}
+
+.nam-eu-concerts__item > figure {
+  position: relative;
+}
+.nam-eu-concerts__item > figure > img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.nam-eu-concerts__item > p {
+  padding: 35px 4%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #31424b;
+  color: #76766f;
+  font-size: 21px;
+  line-height: 35px;
 }
 
 header {
@@ -163,6 +219,19 @@ header > h1 span {
 .banner-content a:hover {
   background: #fff;
   color: #020B13;
+}
+
+.nam-eu {
+  background: #253747;
+}
+.nam-eu-concerts {
+  display: flex;
+}
+.nam-eu-concerts__item {
+  margin-right: 3.69%;
+}
+.nam-eu-concerts__item:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
