@@ -52,7 +52,7 @@ span[title="Play Video"] {
 %heading {
     margin-bottom: 40px;
     color: returnMap($colors, color4);
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
     text-align: center;
 }
@@ -80,5 +80,12 @@ span[title="Play Video"] {
         color: returnMap($colors, color2);
         font-size: 21px;
         line-height: 35px;
+    }
+}
+
+%concert-image {
+    > figure {
+        position: relative;
+        > img { border-radius: 5px; }
     }
 }

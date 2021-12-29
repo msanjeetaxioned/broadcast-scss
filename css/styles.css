@@ -107,15 +107,15 @@ span[title="Play Video"]:hover {
   cursor: pointer;
 }
 
-.nam-eu > .wrapper > h3 {
+.etiam > .wrapper > h3, .nam-eu > .wrapper > h3 {
   margin-bottom: 40px;
   color: #fff;
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
   text-align: center;
 }
 
-.nam-eu > .wrapper > p {
+.etiam > .wrapper > p, .nam-eu > .wrapper > p {
   margin-bottom: 70px;
   color: #76766f;
   font-size: 21px;
@@ -137,6 +137,13 @@ span[title="Play Video"]:hover {
   color: #76766f;
   font-size: 21px;
   line-height: 35px;
+}
+
+.etiam-concerts__item > figure {
+  position: relative;
+}
+.etiam-concerts__item > figure > img {
+  border-radius: 5px;
 }
 
 header {
@@ -232,6 +239,59 @@ header > h1 span {
 }
 .nam-eu-concerts__item:last-child {
   margin-right: 0;
+}
+
+.etiam {
+  background: #0c1c23;
+}
+.etiam > .wrapper > h3 {
+  text-align: left;
+}
+.etiam > .wrapper > p {
+  text-align: left;
+}
+
+.etiam-content {
+  display: flex;
+}
+
+.etiam-names {
+  min-width: 265px;
+  margin-right: 2.63%;
+  flex-basis: 17.5%;
+}
+.etiam-names__item {
+  margin-bottom: 10px;
+}
+.etiam-names__item:last-child {
+  margin-bottom: 0;
+}
+.etiam-names__link {
+  padding: 12px 20px;
+  border-radius: 5px;
+  display: block;
+  background: #31424b;
+  color: #76766f;
+  font-size: 18px;
+  transition: background 1s ease-in-out, color 1s ease-in-out;
+}
+.etiam-names__link:hover {
+  background: #aa14cc;
+  color: white;
+  cursor: pointer;
+}
+.etiam-names__link.selected {
+  background: #aa14cc;
+  color: white;
+}
+
+.etiam-concerts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px 3.5%;
+}
+.etiam-concerts__item {
+  flex-basis: 31%;
 }
 
 /*# sourceMappingURL=styles.css.map */

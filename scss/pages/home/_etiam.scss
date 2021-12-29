@@ -1,0 +1,55 @@
+.etiam {
+    background: returnMap($colors, color7);
+    > .wrapper {
+        > h3 {
+            @extend %heading;
+            text-align: left
+        }
+        > p {
+            @extend %paragraph;
+            text-align: left
+        }
+    }
+}
+
+.etiam-content {
+    display: flex;
+}
+
+.etiam-names {
+    min-width: 265px;
+    margin-right: 2.63%;
+    flex-basis: 17.5%;
+    &__item {
+        margin-bottom: 10px;
+        &:last-child { margin-bottom: 0; }
+    }
+    &__link {
+        padding: 12px 20px;
+        border-radius: 5px;
+        display: block;
+        background: returnMap($colors, color6);
+        color: returnMap($colors, color2);
+        font-size: 18px;
+        transition: background 1s ease-in-out, color 1s ease-in-out;
+        &:hover {
+            background: returnMap($colors, color8);
+            color: white;
+            cursor: pointer;
+        }
+        &.selected {
+            background: returnMap($colors, color8);
+            color: white;
+        }
+    }
+}
+
+.etiam-concerts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px 3.5%;
+    &__item {
+        flex-basis: 31%;
+        @extend %concert-image;
+    }
+}
