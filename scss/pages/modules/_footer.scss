@@ -1,0 +1,129 @@
+.footer-part1-container { background: returnMap($colors, color2); }
+
+.footer-part1 {
+    padding: 75px 0 135px 0;
+    display: flex;
+    @include mediaQuery(tablet) { padding: 75px 0 100px 0; }
+    @include mediaQuery(mobile) { flex-direction: column; }
+    > * { 
+        flex: 1;
+        @include mediaQuery(mobile) {
+            margin-bottom: 30px;
+            flex: unset;
+            &:last-child { margin-bottom: 0; }
+        }
+    }
+    h3 { @extend %footer-heading; }
+    .about {
+        > p {
+            padding-right: 19%;
+            color: returnMap($colors, color3);
+            font-size: 16px;
+            line-height: 25px;
+            @include mediaQuery(mobile) { padding-right: 0; }
+            @include mediaQuery(mobile) { text-align: center; }
+        }
+    }
+    .our-sponsors {
+        img {
+            max-width: 100%;
+            width: unset;
+            max-height: 100%;
+            height: unset;
+            @include mediaQuery(mobile) { margin: 0 auto; }
+        }
+    }
+}
+
+.footer-part2-container { background: returnMap($colors, color4); }
+
+.footer-part2 {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    @include mediaQuery(mobile) { 
+        padding: 10px 0;
+        flex-direction: column; 
+    }
+    > * { 
+        flex: 1;
+        @include mediaQuery(mobile) {
+            margin-bottom: 10px;
+            flex: unset;
+            &:last-child { margin-bottom: 0; }
+        }
+    }
+}
+
+.footer-social-links {
+    display: flex;
+    &__item {
+        margin-right: 25px;
+        &:last-child { margin-right: 0; }
+    }
+    &__link {
+        display: inline-block;
+        color: returnMap($colors, color1);
+        font-size: 0;
+        transition: color 1s ease-in-out;
+        &:hover { color: returnMap($colors, color5); }
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-size: 20px;
+            font-weight: 400;
+        }
+        &[title="Facebook"]::before { content: "\f39e"; }
+        &[title="Twitter"]::before { content: "\f099"; }
+        &[title="Vimeo"]::before { content: "\f40a"; }
+        &[title="Instagram"]::before { content: "\f16d"; }
+    }
+}
+
+.privacy-visa { 
+    display: flex;
+    justify-content: flex-end;
+    @include mediaQuery(mobile) { 
+        width: 100%;
+        justify-content: space-between;
+    }
+    > a {
+        color: returnMap($colors, color1);
+        font-size: 0;
+        transition: color 1s ease-in-out;
+        &:hover { color: returnMap($colors, color5); }
+        &::before {
+            content: "\f1f0";
+            font-family: "Font Awesome 5 Brands";
+            font-size: 24px;
+            font-weight: 400;
+            @include mediaQuery(mobile) { font-size: 20px; }
+        }
+    }
+}
+
+.policy-terms {
+    margin-right: 6%;
+    display: flex;
+    align-items: center;
+    &__item {
+        &::after {
+            content: "|";
+            margin: 0 5px;
+            color: returnMap($colors, color1);
+            font-size: 22px;
+            @include mediaQuery(mobile) { font-size: 18px; }
+        }
+        &:last-child::after {
+            content: unset;
+            margin: unset;
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: returnMap($colors, color1);
+        font-size: 14px;
+        transition: color 1s ease-in-out;
+        @include mediaQuery(mobile) { font-size: 12px; }
+        &:hover { color: returnMap($colors, color5); }
+    }
+}
