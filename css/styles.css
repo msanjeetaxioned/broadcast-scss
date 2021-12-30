@@ -107,7 +107,7 @@ span[title="Play Video"]:hover {
   cursor: pointer;
 }
 
-.etiam > .wrapper > h3, .nam-eu > .wrapper > h3 {
+.etiam > .wrapper > h3, .nam-eu > .wrapper > h3, .aliquam > .wrapper > h3 {
   margin-bottom: 40px;
   color: #fff;
   font-size: 42px;
@@ -115,21 +115,26 @@ span[title="Play Video"]:hover {
   text-align: center;
 }
 
-.etiam > .wrapper > p, .nam-eu > .wrapper > p {
+.etiam > .wrapper > p, .nam-eu > .wrapper > p, .aliquam > .wrapper > p {
   margin-bottom: 70px;
   color: #76766f;
   font-size: 21px;
   text-align: center;
 }
 
-.nam-eu-concerts__item > figure {
+.aliquam-concerts__item, .nam-eu-concerts__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.aliquam-concerts__item > figure, .nam-eu-concerts__item > figure {
   position: relative;
 }
-.nam-eu-concerts__item > figure > img {
+.aliquam-concerts__item > figure > img, .nam-eu-concerts__item > figure > img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.nam-eu-concerts__item > p {
+.aliquam-concerts__item > p, .nam-eu-concerts__item > p {
   padding: 35px 4%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -137,6 +142,7 @@ span[title="Play Video"]:hover {
   color: #76766f;
   font-size: 21px;
   line-height: 35px;
+  flex-grow: 1;
 }
 
 .etiam-concerts__item > figure {
@@ -228,7 +234,7 @@ header > h1 span {
   color: #020B13;
 }
 
-.nam-eu {
+.nam-eu, .aliquam {
   background: #253747;
 }
 .nam-eu-concerts {
@@ -292,6 +298,23 @@ header > h1 span {
 }
 .etiam-concerts__item {
   flex-basis: 31%;
+}
+
+.aliquam {
+  background: #252c34;
+}
+
+.aliquam-concerts {
+  display: flex;
+}
+.aliquam-concerts__item {
+  margin-right: 3.29%;
+}
+.aliquam-concerts__item:last-child {
+  margin-right: 0;
+}
+.aliquam-concerts__item > p {
+  background: #333a3b;
 }
 
 /*# sourceMappingURL=styles.css.map */

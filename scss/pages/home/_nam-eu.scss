@@ -1,12 +1,8 @@
 .nam-eu {
     background: returnMap($colors, color5);
     > .wrapper {
-        > h3 {
-            @extend %heading;
-        }
-        > p {
-            @extend %paragraph;
-        }
+        > h3 { @extend %heading; }
+        > p { @extend %paragraph; }
     }
 }
 

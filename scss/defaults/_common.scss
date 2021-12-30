@@ -65,6 +65,9 @@ span[title="Play Video"] {
 }
 
 %concert-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     > figure { 
         position: relative;
         > img {
@@ -80,6 +83,7 @@ span[title="Play Video"] {
         color: returnMap($colors, color2);
         font-size: 21px;
         line-height: 35px;
+        flex-grow: 1;
     }
 }
 

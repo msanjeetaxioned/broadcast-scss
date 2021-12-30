@@ -1,0 +1,14 @@
+.aliquam {
+    @extend .nam-eu;
+    background: returnMap($colors, color9);
+}
+
+.aliquam-concerts {
+    display: flex;
+    &__item {
+        @extend %concert-card;
+        margin-right: 3.29%;
+        &:last-child { margin-right: 0; }
+        > p { background: returnMap($colors, color10); }
+    }
+}
