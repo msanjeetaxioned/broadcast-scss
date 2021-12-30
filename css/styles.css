@@ -195,6 +195,100 @@ header > h1 span {
   display: none;
 }
 
+footer {
+  background: #020B13;
+}
+
+.concerts {
+  margin-bottom: 80px;
+  display: flex;
+}
+.concerts > li {
+  margin-right: 3.29%;
+  flex: 1;
+}
+.concerts > li:last-child {
+  margin-right: 0;
+}
+.concerts > li > h4 {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.concert-links > li {
+  border-bottom: 1px solid #76766f;
+}
+.concert-links > li:last-child {
+  border-bottom: none;
+}
+.concert-links > li > a {
+  padding: 15px 0;
+  display: inline-block;
+  color: #76766f;
+  font-size: 18px;
+  transition: color 1s ease-in-out;
+}
+.concert-links > li > a:hover {
+  color: #fff;
+}
+
+.social-links {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.social-links__item {
+  margin-right: 1.32%;
+}
+.social-links__item:last-child {
+  margin-right: 0;
+}
+.social-links__link {
+  display: inline-block;
+  color: #76766f;
+  font-size: 0;
+  transition: color 1s ease-in-out;
+}
+.social-links__link::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 30px;
+  font-weight: 400;
+}
+.social-links__link[title=Twitter]::before {
+  content: "\f099";
+}
+.social-links__link[title=Facebook]::before {
+  content: "\f39e";
+}
+.social-links__link[title=Instagram]::before {
+  content: "\f16d";
+}
+.social-links__link[title=Snapchat]::before {
+  content: "\f2ab";
+}
+.social-links__link:hover {
+  color: #fff;
+}
+
+.copyright-info {
+  color: rgba(134, 130, 130, 0.349);
+  text-align: center;
+}
+.copyright-info > a {
+  color: #76766f;
+  text-transform: capitalize;
+  transition: color 1s ease-in-out;
+}
+.copyright-info > a[title=Templated] {
+  text-transform: uppercase;
+}
+.copyright-info > a:hover {
+  color: #fff;
+}
+
 .banner {
   position: relative;
 }
