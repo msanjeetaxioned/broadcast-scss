@@ -296,7 +296,7 @@ footer {
 .banner-content {
   position: absolute;
   z-index: 2;
-  top: 47%;
+  top: 50%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -390,8 +390,18 @@ footer {
   flex-wrap: wrap;
   gap: 35px 3.5%;
 }
+@media (max-width: 1199px) {
+  .etiam-concerts {
+    gap: 25px 3.5%;
+  }
+}
 .etiam-concerts__item {
   flex-basis: 31%;
+}
+@media (max-width: 1199px) {
+  .etiam-concerts__item {
+    flex-basis: 46.5%;
+  }
 }
 
 .aliquam {

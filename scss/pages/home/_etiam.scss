@@ -46,8 +46,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 35px 3.5%;
+    @include mediaQuery(small-desktop) { gap: 25px 3.5%; }
     &__item {
         flex-basis: 31%;
         @extend %concert-image;
+        @include mediaQuery(small-desktop) { flex-basis: 46.5%; }
     }
 }
