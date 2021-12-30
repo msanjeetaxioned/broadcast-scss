@@ -58,6 +58,11 @@ table {
 body {
   font-family: "Signika", sans-serif;
 }
+@media (max-width: 767px) {
+  body {
+    background: #020B13;
+  }
+}
 
 a {
   color: unset;
@@ -205,6 +210,11 @@ header {
   color: white;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  header {
+    position: sticky;
+  }
 }
 header > h1 > a {
   color: #fff;

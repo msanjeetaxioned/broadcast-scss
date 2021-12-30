@@ -10,6 +10,7 @@ header {
     color: white;
     align-items: center;
     justify-content: space-between;
+    @include mediaQuery(mobile) { position: sticky; }
     > h1 {
         > a {
             color: returnMap($colors, color4);

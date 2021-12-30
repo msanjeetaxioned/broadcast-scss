@@ -1,5 +1,9 @@
 * { box-sizing: border-box; }
-body { font-family: $fontFamily; }
+
+body {
+    @include mediaQuery(mobile) { background: returnMap($colors, color11); }
+    font-family: $fontFamily; 
+}
 
 a {
     color: unset;
