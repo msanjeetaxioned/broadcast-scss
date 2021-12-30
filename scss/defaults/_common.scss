@@ -2,7 +2,7 @@
 
 body {
     @include mediaQuery(mobile) { background: returnMap($colors, color11); }
-    font-family: $fontFamily; 
+    font-family: $fontFamily;
 }
 
 a {

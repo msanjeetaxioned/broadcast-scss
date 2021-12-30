@@ -7,24 +7,32 @@ header {
     left: 0;
     display: flex;
     background: returnMap($colors, color1);
-    color: white;
     align-items: center;
     justify-content: space-between;
     @include mediaQuery(mobile) { position: sticky; }
-    > h1 {
-        > a {
-            color: returnMap($colors, color4);
-            font-size: 22px;
-            font-weight: bold;
-            @include mediaQuery(tablet) { font-size: 20px; }
-            @include mediaQuery(mobile) { font-size: 18px; }
-        }
-        span {
-            color: returnMap($colors, color2);
+}
+
+.broadcast-logo {
+    > a {
+        color: returnMap($colors, color4);
+        font-size: 22px;
+        font-weight: bold;
+        @include mediaQuery(tablet) { font-size: 20px; }
+        @include mediaQuery(mobile) { font-size: 18px; }
+    }
+    > span {
+        color: returnMap($colors, color2);
+        font-size: 20px;
+        font-weight: normal;
+        @include mediaQuery(tablet) { font-size: 18px; }
+        @include mediaQuery(mobile) { font-size: 16px; }
+        > a[title="Templated"] {
             font-size: 20px;
-            font-weight: normal;
+            text-transform: uppercase;
+            transition: color 1s ease-in-out;
             @include mediaQuery(tablet) { font-size: 18px; }
             @include mediaQuery(mobile) { font-size: 16px; }
+            &:hover { color: returnMap($colors, color4); }
         }
     }
 }
