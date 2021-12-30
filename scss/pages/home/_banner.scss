@@ -1,4 +1,7 @@
-.banner { position: relative; }
+.banner { 
+    position: relative;
+    @include mediaQuery(mobile) { position: static; }
+}
 
 .banner-content {
     position: absolute;
@@ -7,6 +10,12 @@
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    @include mediaQuery(mobile) {
+        padding: 75px 0;
+        position: static;
+        background: #060c38;
+        transform: unset;
+    }
     > h2 {
         margin-bottom: 45px;
         color: returnMap($colors, color4);
@@ -15,6 +24,10 @@
         @include mediaQuery(tablet) {
             margin-bottom: 30px;
             font-size: 44px;
+        }
+        @include mediaQuery(mobile) {
+            margin-bottom: 25px;
+            font-size: 32px;
         }
     }
     > p {
@@ -26,6 +39,11 @@
             margin-bottom: 30px;
             font-size: 20px;
             line-height: 28px;
+        }
+        @include mediaQuery(mobile) {
+            margin-bottom: 25px;
+            font-size: 18px;
+            line-height: 26px;
         }
     }
     a {
@@ -39,6 +57,10 @@
         transition: background 1s ease-in-out, color 1s ease-in-out;
         @include mediaQuery(tablet) {
             padding: 15px 25px;
+        }
+        @include mediaQuery(tablet) {
+            padding: 10px 20px;
+            font-size: 18px;
         }
         &:hover {
             background: returnMap($colors, color4);
