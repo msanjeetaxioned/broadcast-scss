@@ -16,12 +16,14 @@ header {
             font-size: 22px;
             font-weight: bold;
             @include mediaQuery(tablet) { font-size: 20px; }
+            @include mediaQuery(mobile) { font-size: 18px; }
         }
         span {
             color: returnMap($colors, color2);
             font-size: 20px;
             font-weight: normal;
             @include mediaQuery(tablet) { font-size: 18px; }
+            @include mediaQuery(mobile) { font-size: 16px; }
         }
     }
 }
@@ -31,6 +33,7 @@ header {
         color: returnMap($colors, color2);
         font-size: 18px;
         transition: color 1s ease-in-out;
+        @include mediaQuery(mobile) { font-size: 16px; }
         &::before {
             content: "\f0c9";
             margin-right: 10px;

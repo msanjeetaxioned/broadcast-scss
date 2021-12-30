@@ -30,7 +30,7 @@ figure {
 span[title="Play Video"] {
     display: inline-block;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 50%;
     left: 50%;
     color: returnMap($colors, color3);
