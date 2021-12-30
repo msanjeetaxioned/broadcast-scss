@@ -5,11 +5,19 @@
 
 .aliquam-concerts {
     display: flex;
+    @include mediaQuery(mobile) { flex-direction: column; }
     &__item {
         @extend %concert-card;
         margin-right: 3.29%;
         @include mediaQuery(tablet) { margin-right: 2%; }
-        &:last-child { margin-right: 0; }
+        @include mediaQuery(mobile) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        &:last-child { 
+            margin-right: 0;
+            @include mediaQuery(mobile) { margin-bottom: 0; }
+        }
         > p { background: returnMap($colors, color10); }
     }
 }

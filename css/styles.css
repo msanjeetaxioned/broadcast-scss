@@ -620,6 +620,11 @@ footer {
 .aliquam-concerts {
   display: flex;
 }
+@media (max-width: 767px) {
+  .aliquam-concerts {
+    flex-direction: column;
+  }
+}
 .aliquam-concerts__item {
   margin-right: 3.29%;
 }
@@ -628,8 +633,19 @@ footer {
     margin-right: 2%;
   }
 }
+@media (max-width: 767px) {
+  .aliquam-concerts__item {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 .aliquam-concerts__item:last-child {
   margin-right: 0;
+}
+@media (max-width: 767px) {
+  .aliquam-concerts__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .aliquam-concerts__item > p {
   background: #333a3b;
