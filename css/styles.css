@@ -505,8 +505,18 @@ footer {
 .etiam > .wrapper > h3 {
   text-align: left;
 }
+@media (max-width: 767px) {
+  .etiam > .wrapper > h3 {
+    text-align: center;
+  }
+}
 .etiam > .wrapper > p {
   text-align: left;
+}
+@media (max-width: 767px) {
+  .etiam > .wrapper > p {
+    text-align: center;
+  }
 }
 
 .etiam-content {
@@ -530,6 +540,11 @@ footer {
     flex-basis: unset;
   }
 }
+@media (max-width: 767px) {
+  .etiam-names {
+    margin-bottom: 30px;
+  }
+}
 .etiam-names__item {
   margin-bottom: 10px;
 }
@@ -549,6 +564,12 @@ footer {
   .etiam-names__link {
     padding: 12px 18px;
     font-size: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .etiam-names__link {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 }
 .etiam-names__link:hover {
@@ -571,12 +592,24 @@ footer {
     gap: 25px 4%;
   }
 }
+@media (max-width: 767px) {
+  .etiam-concerts {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+}
 .etiam-concerts__item {
   flex-basis: 31%;
 }
 @media (max-width: 1199px) {
   .etiam-concerts__item {
     flex-basis: 48%;
+  }
+}
+@media (max-width: 767px) {
+  .etiam-concerts__item {
+    flex-basis: unset;
   }
 }
 

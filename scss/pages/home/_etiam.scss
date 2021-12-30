@@ -3,11 +3,13 @@
     > .wrapper {
         > h3 {
             @extend %heading;
-            text-align: left
+            text-align: left;
+            @include mediaQuery(mobile) { text-align: center; }
         }
         > p {
             @extend %paragraph;
-            text-align: left
+            text-align: left;
+            @include mediaQuery(mobile) { text-align: center; }
         }
     }
 }
@@ -26,6 +28,7 @@
         margin-bottom: 35px;
         flex-basis: unset;
     }
+    @include mediaQuery(mobile) { margin-bottom: 30px; }
     &__item {
         margin-bottom: 10px;
         &:last-child { margin-bottom: 0; }
@@ -41,6 +44,10 @@
         @include mediaQuery(tablet) {
             padding: 12px 18px;
             font-size: 16px;
+        }
+        @include mediaQuery(tablet) {
+            padding: 10px 15px;
+            font-size: 14px;
         }
         &:hover {
             background: returnMap($colors, color8);
@@ -59,9 +66,15 @@
     flex-wrap: wrap;
     gap: 35px 3.5%;
     @include mediaQuery(small-desktop) { gap: 25px 4%; }
+    @include mediaQuery(mobile) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
     &__item {
         flex-basis: 31%;
         @extend %concert-image;
         @include mediaQuery(small-desktop) { flex-basis: 48%; }
+        @include mediaQuery(mobile) { flex-basis: unset; }
     }
 }
