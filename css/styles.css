@@ -125,6 +125,11 @@ span[title="Play Video"]:hover {
     font-size: 34px;
   }
 }
+@media (max-width: 767px) {
+  .etiam > .wrapper > h3, .nam-eu > .wrapper > h3, .aliquam > .wrapper > h3 {
+    font-size: 24px;
+  }
+}
 
 .etiam > .wrapper > p, .nam-eu > .wrapper > p, .aliquam > .wrapper > p {
   margin-bottom: 70px;
@@ -135,6 +140,12 @@ span[title="Play Video"]:hover {
 @media (max-width: 1023px) {
   .etiam > .wrapper > p, .nam-eu > .wrapper > p, .aliquam > .wrapper > p {
     font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .etiam > .wrapper > p, .nam-eu > .wrapper > p, .aliquam > .wrapper > p {
+    margin-bottom: 55px;
+    font-size: 16px;
   }
 }
 
@@ -165,6 +176,13 @@ span[title="Play Video"]:hover {
     padding: 20px 5%;
     font-size: 18px;
     line-height: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .aliquam-concerts__item > p, .nam-eu-concerts__item > p {
+    padding: 15px 5%;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -458,11 +476,27 @@ footer {
 .nam-eu-concerts {
   display: flex;
 }
+@media (max-width: 767px) {
+  .nam-eu-concerts {
+    flex-direction: column;
+  }
+}
 .nam-eu-concerts__item {
   margin-right: 3.69%;
 }
+@media (max-width: 767px) {
+  .nam-eu-concerts__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
 .nam-eu-concerts__item:last-child {
   margin-right: 0;
+}
+@media (max-width: 767px) {
+  .nam-eu-concerts__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .etiam {

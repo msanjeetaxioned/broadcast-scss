@@ -60,6 +60,7 @@ span[title="Play Video"] {
     font-weight: bold;
     text-align: center;
     @include mediaQuery(tablet) { font-size: 34px; }
+    @include mediaQuery(mobile) { font-size: 24px; }
 }
 
 %paragraph {
@@ -68,6 +69,10 @@ span[title="Play Video"] {
     font-size: 21px;
     text-align: center;
     @include mediaQuery(tablet) { font-size: 18px; }
+    @include mediaQuery(mobile) {
+        margin-bottom: 55px;
+        font-size: 16px; 
+    }
 }
 
 %concert-card {
@@ -94,6 +99,11 @@ span[title="Play Video"] {
             padding: 20px 5%;
             font-size: 18px;
             line-height: 26px;
+        }
+        @include mediaQuery(mobile) { 
+            padding: 15px 5%;
+            font-size: 16px;
+            line-height: 24px;
         }
     }
 }
