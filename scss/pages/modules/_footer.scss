@@ -13,6 +13,7 @@ footer { background: returnMap($colors, color11); }
             font-size: 30px;
             font-weight: bold;
             text-transform: capitalize;
+            @include mediaQuery(tablet) { font-size: 24px; }
         }
     }
 }
@@ -27,6 +28,7 @@ footer { background: returnMap($colors, color11); }
             color: returnMap($colors, color2);
             font-size: 18px;
             transition: color 1s ease-in-out;
+            @include mediaQuery(tablet) { font-size: 16px; }
             &:hover { color: returnMap($colors, color4); }
         }
     }
@@ -38,6 +40,7 @@ footer { background: returnMap($colors, color11); }
     justify-content: center;
     &__item {
         margin-right: 1.32%;
+        @include mediaQuery(tablet) { margin-right: 2.5%; }
         &:last-child { margin-right: 0; }
     }
     &__link {
@@ -49,6 +52,7 @@ footer { background: returnMap($colors, color11); }
             font-family: "Font Awesome 5 Brands";
             font-size: 30px;
             font-weight: 400;
+            @include mediaQuery(tablet) { font-size: 24px; }
         }
         &[title="Twitter"]::before { content: "\f099"; }
         &[title="Facebook"]::before { content: "\f39e"; }
@@ -60,7 +64,9 @@ footer { background: returnMap($colors, color11); }
 
 .copyright-info {
     color: rgba(134, 130, 130, 0.349);
+    font-size: 16px;
     text-align: center;
+    @include mediaQuery(tablet) { font-size: 14px; }
     > a {
         color: returnMap($colors, color2);
         text-transform: capitalize;

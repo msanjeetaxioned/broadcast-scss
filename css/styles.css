@@ -114,12 +114,22 @@ span[title="Play Video"]:hover {
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 1023px) {
+  .etiam > .wrapper > h3, .nam-eu > .wrapper > h3, .aliquam > .wrapper > h3 {
+    font-size: 34px;
+  }
+}
 
 .etiam > .wrapper > p, .nam-eu > .wrapper > p, .aliquam > .wrapper > p {
   margin-bottom: 70px;
   color: #76766f;
   font-size: 21px;
   text-align: center;
+}
+@media (max-width: 1023px) {
+  .etiam > .wrapper > p, .nam-eu > .wrapper > p, .aliquam > .wrapper > p {
+    font-size: 18px;
+  }
 }
 
 .aliquam-concerts__item, .nam-eu-concerts__item {
@@ -143,6 +153,13 @@ span[title="Play Video"]:hover {
   font-size: 21px;
   line-height: 35px;
   flex-grow: 1;
+}
+@media (max-width: 1023px) {
+  .aliquam-concerts__item > p, .nam-eu-concerts__item > p {
+    padding: 20px 5%;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .etiam-concerts__item > figure {
@@ -170,10 +187,20 @@ header > h1 > a {
   font-size: 22px;
   font-weight: bold;
 }
+@media (max-width: 1023px) {
+  header > h1 > a {
+    font-size: 20px;
+  }
+}
 header > h1 span {
   color: #76766f;
   font-size: 20px;
   font-weight: normal;
+}
+@media (max-width: 1023px) {
+  header > h1 span {
+    font-size: 18px;
+  }
 }
 
 .nav > span {
@@ -217,6 +244,11 @@ footer {
   font-weight: bold;
   text-transform: capitalize;
 }
+@media (max-width: 1023px) {
+  .concerts > li > h4 {
+    font-size: 24px;
+  }
+}
 
 .concert-links > li {
   border-bottom: 1px solid #76766f;
@@ -231,6 +263,11 @@ footer {
   font-size: 18px;
   transition: color 1s ease-in-out;
 }
+@media (max-width: 1023px) {
+  .concert-links > li > a {
+    font-size: 16px;
+  }
+}
 .concert-links > li > a:hover {
   color: #fff;
 }
@@ -242,6 +279,11 @@ footer {
 }
 .social-links__item {
   margin-right: 1.32%;
+}
+@media (max-width: 1023px) {
+  .social-links__item {
+    margin-right: 2.5%;
+  }
 }
 .social-links__item:last-child {
   margin-right: 0;
@@ -256,6 +298,11 @@ footer {
   font-family: "Font Awesome 5 Brands";
   font-size: 30px;
   font-weight: 400;
+}
+@media (max-width: 1023px) {
+  .social-links__link::before {
+    font-size: 24px;
+  }
 }
 .social-links__link[title=Twitter]::before {
   content: "\f099";
@@ -275,7 +322,13 @@ footer {
 
 .copyright-info {
   color: rgba(134, 130, 130, 0.349);
+  font-size: 16px;
   text-align: center;
+}
+@media (max-width: 1023px) {
+  .copyright-info {
+    font-size: 14px;
+  }
 }
 .copyright-info > a {
   color: #76766f;
@@ -372,11 +425,23 @@ footer {
 .etiam-content {
   display: flex;
 }
+@media (max-width: 1023px) {
+  .etiam-content {
+    flex-direction: column;
+  }
+}
 
 .etiam-names {
   min-width: 265px;
   margin-right: 2.63%;
   flex-basis: 17.5%;
+}
+@media (max-width: 1023px) {
+  .etiam-names {
+    margin-right: 0;
+    margin-bottom: 35px;
+    flex-basis: unset;
+  }
 }
 .etiam-names__item {
   margin-bottom: 10px;
@@ -392,6 +457,12 @@ footer {
   color: #76766f;
   font-size: 18px;
   transition: background 1s ease-in-out, color 1s ease-in-out;
+}
+@media (max-width: 1023px) {
+  .etiam-names__link {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
 }
 .etiam-names__link:hover {
   background: #aa14cc;
@@ -410,7 +481,7 @@ footer {
 }
 @media (max-width: 1199px) {
   .etiam-concerts {
-    gap: 25px 3.5%;
+    gap: 25px 4%;
   }
 }
 .etiam-concerts__item {
@@ -418,7 +489,7 @@ footer {
 }
 @media (max-width: 1199px) {
   .etiam-concerts__item {
-    flex-basis: 46.5%;
+    flex-basis: 48%;
   }
 }
 
@@ -431,6 +502,11 @@ footer {
 }
 .aliquam-concerts__item {
   margin-right: 3.29%;
+}
+@media (max-width: 1023px) {
+  .aliquam-concerts__item {
+    margin-right: 2%;
+  }
 }
 .aliquam-concerts__item:last-child {
   margin-right: 0;

@@ -12,12 +12,20 @@
     }
 }
 
-.etiam-content { display: flex; }
+.etiam-content { 
+    display: flex;
+    @include mediaQuery(tablet) { flex-direction: column; }
+}
 
 .etiam-names {
     min-width: 265px;
     margin-right: 2.63%;
     flex-basis: 17.5%;
+    @include mediaQuery(tablet) { 
+        margin-right: 0;
+        margin-bottom: 35px;
+        flex-basis: unset;
+    }
     &__item {
         margin-bottom: 10px;
         &:last-child { margin-bottom: 0; }
@@ -30,6 +38,10 @@
         color: returnMap($colors, color2);
         font-size: 18px;
         transition: background 1s ease-in-out, color 1s ease-in-out;
+        @include mediaQuery(tablet) {
+            padding: 12px 18px;
+            font-size: 16px;
+        }
         &:hover {
             background: returnMap($colors, color8);
             color: white;
@@ -46,10 +58,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 35px 3.5%;
-    @include mediaQuery(small-desktop) { gap: 25px 3.5%; }
+    @include mediaQuery(small-desktop) { gap: 25px 4%; }
     &__item {
         flex-basis: 31%;
         @extend %concert-image;
-        @include mediaQuery(small-desktop) { flex-basis: 46.5%; }
+        @include mediaQuery(small-desktop) { flex-basis: 48%; }
     }
 }

@@ -15,11 +15,13 @@ header {
             color: returnMap($colors, color4);
             font-size: 22px;
             font-weight: bold;
+            @include mediaQuery(tablet) { font-size: 20px; }
         }
         span {
             color: returnMap($colors, color2);
             font-size: 20px;
             font-weight: normal;
+            @include mediaQuery(tablet) { font-size: 18px; }
         }
     }
 }
