@@ -12,12 +12,21 @@
         color: returnMap($colors, color4);
         font-size: 64px;
         font-weight: bold;
+        @include mediaQuery(tablet) {
+            margin-bottom: 30px;
+            font-size: 44px;
+        }
     }
     > p {
         margin-bottom: 45px;
         color: returnMap($colors, color2);
         font-size: 26px;
         line-height: 40px;
+        @include mediaQuery(tablet) {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 28px;
+        }
     }
     a {
         padding: 22px 35px;
@@ -28,6 +37,9 @@
         font-size: 20px;
         font-weight: bold;
         transition: background 1s ease-in-out, color 1s ease-in-out;
+        @include mediaQuery(tablet) {
+            padding: 15px 25px;
+        }
         &:hover {
             background: returnMap($colors, color4);
             color: returnMap($colors, color11);
