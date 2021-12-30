@@ -3,10 +3,19 @@ footer { background: returnMap($colors, color11); }
 .concerts {
     margin-bottom: 80px;
     display: flex;
+    @include mediaQuery(mobile) { flex-direction: column; }
     > li { 
         margin-right: 3.29%;
         flex: 1;
-        &:last-child { margin-right: 0; }
+        @include mediaQuery(mobile) {
+            margin-right: 0;
+            margin-bottom: 20px;
+            flex: unset;
+        }
+        &:last-child { 
+            margin-right: 0;
+            @include mediaQuery(mobile) { margin-bottom: 0; }
+        }
         > h4 {
             margin-bottom: 30px;
             color: returnMap($colors, color4);
@@ -14,6 +23,11 @@ footer { background: returnMap($colors, color11); }
             font-weight: bold;
             text-transform: capitalize;
             @include mediaQuery(tablet) { font-size: 24px; }
+            @include mediaQuery(mobile) {
+                margin-bottom: 25px;
+                font-size: 20px;
+                text-align: center; 
+            }
         }
     }
 }
@@ -21,6 +35,10 @@ footer { background: returnMap($colors, color11); }
 .concert-links {
     > li {
         border-bottom: 1px solid returnMap($colors, color2);
+        @include mediaQuery(mobile) {
+            border-bottom: none;
+            text-align: center;
+        }
         &:last-child { border-bottom: none; }
         > a {
             padding: 15px 0;
@@ -29,6 +47,10 @@ footer { background: returnMap($colors, color11); }
             font-size: 18px;
             transition: color 1s ease-in-out;
             @include mediaQuery(tablet) { font-size: 16px; }
+            @include mediaQuery(mobile) {
+                padding: 10px 0;
+                font-size: 14px;
+            }
             &:hover { color: returnMap($colors, color4); }
         }
     }
@@ -41,6 +63,7 @@ footer { background: returnMap($colors, color11); }
     &__item {
         margin-right: 1.32%;
         @include mediaQuery(tablet) { margin-right: 2.5%; }
+        @include mediaQuery(mobile) { margin-right: 3%; }
         &:last-child { margin-right: 0; }
     }
     &__link {
@@ -53,6 +76,7 @@ footer { background: returnMap($colors, color11); }
             font-size: 30px;
             font-weight: 400;
             @include mediaQuery(tablet) { font-size: 24px; }
+            @include mediaQuery(mobile) { font-size: 20px; }
         }
         &[title="Twitter"]::before { content: "\f099"; }
         &[title="Facebook"]::before { content: "\f39e"; }
@@ -67,6 +91,7 @@ footer { background: returnMap($colors, color11); }
     font-size: 16px;
     text-align: center;
     @include mediaQuery(tablet) { font-size: 14px; }
+    @include mediaQuery(tablet) { font-size: 12px; }
     > a {
         color: returnMap($colors, color2);
         text-transform: capitalize;

@@ -269,12 +269,29 @@ footer {
   margin-bottom: 80px;
   display: flex;
 }
+@media (max-width: 767px) {
+  .concerts {
+    flex-direction: column;
+  }
+}
 .concerts > li {
   margin-right: 3.29%;
   flex: 1;
 }
+@media (max-width: 767px) {
+  .concerts > li {
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex: unset;
+  }
+}
 .concerts > li:last-child {
   margin-right: 0;
+}
+@media (max-width: 767px) {
+  .concerts > li:last-child {
+    margin-bottom: 0;
+  }
 }
 .concerts > li > h4 {
   margin-bottom: 30px;
@@ -288,9 +305,22 @@ footer {
     font-size: 24px;
   }
 }
+@media (max-width: 767px) {
+  .concerts > li > h4 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
 
 .concert-links > li {
   border-bottom: 1px solid #76766f;
+}
+@media (max-width: 767px) {
+  .concert-links > li {
+    border-bottom: none;
+    text-align: center;
+  }
 }
 .concert-links > li:last-child {
   border-bottom: none;
@@ -305,6 +335,12 @@ footer {
 @media (max-width: 1023px) {
   .concert-links > li > a {
     font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .concert-links > li > a {
+    padding: 10px 0;
+    font-size: 14px;
   }
 }
 .concert-links > li > a:hover {
@@ -324,6 +360,11 @@ footer {
     margin-right: 2.5%;
   }
 }
+@media (max-width: 767px) {
+  .social-links__item {
+    margin-right: 3%;
+  }
+}
 .social-links__item:last-child {
   margin-right: 0;
 }
@@ -341,6 +382,11 @@ footer {
 @media (max-width: 1023px) {
   .social-links__link::before {
     font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .social-links__link::before {
+    font-size: 20px;
   }
 }
 .social-links__link[title=Twitter]::before {
@@ -367,6 +413,11 @@ footer {
 @media (max-width: 1023px) {
   .copyright-info {
     font-size: 14px;
+  }
+}
+@media (max-width: 1023px) {
+  .copyright-info {
+    font-size: 12px;
   }
 }
 .copyright-info > a {
